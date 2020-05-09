@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        .column {
+            float: left;
+            width: 100px;
+            padding: 0px 5px 5px 5px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <div class="column" style="background-color:#FFB695;">
+            <H3>종목</H3>
+            <HR>
+            </HR>
+            {% for object in object_list %}<p>{{ object.text }}
+                <HR>
+                </HR>
+            </p> {% endfor %}
+
+        </div>
+        <div class="column" style="background-color:#96D1CD;">
+            <h3>현재가</h3>
+            <HR>
+            </HR>
+            {% for price in price_list %}<p>USD {{ price }}
+                <HR>
+                </HR>
+            </p> {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

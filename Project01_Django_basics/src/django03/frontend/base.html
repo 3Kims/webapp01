@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ProjectProject</title>
+</head>
+
+<body>
+    {% include "navbar.html" %}
+    <p>Welcome, {{ request.user }}</p>
+    {% block content %}{% endblock%}
+  
+
+  
+</body>
+
+</html>

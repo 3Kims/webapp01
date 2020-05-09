@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app02"></div>
+    <hr />
+    <div id="app01"></div>
+
+    <p>
+      "형식에 구애받지 않는 물과 같이 정신을 비워라. 물을 컵에 넣으면 컵이 되고
+      병에 물을 넣으면 병이 된다." - Bruce Lee;
+    </p>
+    {% load static %}
+    <script
+      type="text/babel"
+      src="{% static '/project03/react02.js' %}"
+    ></script>
+    <hr />
+    <script
+      type="text/babel"
+      src="{% static '/project03/react01.js' %}"
+    ></script>
+  </body>
+</html>

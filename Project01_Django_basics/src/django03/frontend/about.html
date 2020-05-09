@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block content %}
+<span> <input type="checkbox" checked /><br /> </span>
+<span>
+  Information : {{ name }}, {{ age }}
+  <br />
+</span>
+<span>
+  this is done Using for-in Loop Techs : {% for t in tech %} - {{t}}<br />
+  {% endfor %}
+</span>
+<br />
+<hr />
+
+<div>
+  <input type="button" value="about page" />
+</div>
+
+{% endblock %}
